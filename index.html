@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT'S CLOTHING</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 15px;
+            padding: 5px;
+            background-image: radial-gradient(circle at 0% 0%, #009087 0, #00908f 5%, #008f97 10%, #008f9f 15%, #008ea6 20%, #008dac 25%, #008cb2 30%, #008bb6 35%, #0089ba 40%, #1287bd 45%, #3185bf 50%, #4583c0 55%, #5680bf 60%, #657dbe 65%, #737abc 70%, #7f77b8 75%, #8a74b4 80%, #9471af 85%, #9d6ea9 90%, #a56ba2 95%, #ac699b 100%);
+            background-image: url('img/fondocel.jpg');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+        header {
+            background-color: #3f333315;
+            text-emphasis-color: whiter;
+            color: #070707;
+            text-align: center;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 10;
+            box-shadow: 0 0 5px rgb(15, 15, 15);
+        }
+        section {
+            max-width: 800px;
+            text-decoration-color: rgb(0, 0, 0);
+            margin: 2em auto;
+            padding: 1em;
+            background-color: hwb(0 39% 58% / 0.514);
+            box-shadow: 0 0 50px rgba(15, 15, 15, 0.623);
+        }
+        p, h1, h2, ul, button {
+            color: white;
+            text-align: center;
+        }
+        footer {
+            background-color: #00000075;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img css="logo" src="img/albertologo.jpg" alt="Logo de la página" width="50">
+        <h1>CT'S CLOTHING</h1>
+        <h2>by alberto @</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de Nosotros</a></li>
+                <li><a href="#">Servicios Adicionales</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>       
+        </nav>
+    </header>
+    <section>
+        <h2>TODO NUESTRO CATÁLOGO DE ROPA EN DESCUENTO EN ROPA NIKE Y ADIDAS</h2>
+        <p>TENDENCIAS EN NUESTRO CATÁLOGO DE ROPA URBANA</p>
+        <p>¡Solo aquí!</p>
+        <p><a href="galeria.html"><button id="galeria">Galería de Fotos</button></a></p>
+    </section>
+    <section>
+        <h2>Formulario de compra CT'S CLOTHING</h2>
+        <form action="procesar.php" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" required><br><br>
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+            <label for="producto">Producto:</label><br>
+            <input type="text" id="producto" name="producto" required><br><br>
+            <label for="talla">Talla:</label><br>
+            <input type="text" id="talla" name="talla" required><br><br>
+            <input type="submit" value="Comprar">
+        </form>
+    </section>
+    <section>
+        <h2>Servicios</h2>
+        <p>Sobre Nosotros</p>
+        <p>Envíos a todo México y Estados Unidos</p>
+        <p>Logística en Devoluciones</p>
+        <p>Descuentos Hasta del 30%</p>
+        <p><button id="tendencia">Tendencia del 2024</button></p>
+    </section>
+    <footer>
+        <p>&copy; atenciones@ct´sclothing.com.mx</p>
+    </footer>
+</body>
+</html>
